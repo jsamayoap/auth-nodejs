@@ -1,0 +1,24 @@
+{
+  "name": "default",
+  "type": "oracle",
+  "username": "ADMIN",
+  "password": "rYrs4XZQA7WuiEg",
+  "connectString": "(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-ashburn-1.oraclecloud.com))(connect_data=(service_name=g4ec13ef22b372b_drcpfa_medium.adb.oraclecloud.com)))",
+  "database": "drcpfa_medium",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "${rootDir}/entity/**/*.{js,ts}"
+  ],
+  "migrations": [
+    "${rootDir}/migration/**/*.{js,ts}"
+  ],
+  "subscribers": [
+    "${rootDir}/subscriber/**/*.{js,ts}"
+  ],
+  "cli": {
+    "entitiesDir": "${rootDir}/entity",
+    "migrationsDir": "${rootDir}/migration",
+    "subscribersDir": "${rootDir}/subscriber"
+  }
+}
