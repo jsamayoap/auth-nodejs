@@ -1,4 +1,6 @@
-# maat-nodejs
+# auth-nodejs
+
+Proyecto basado en https://github.com/panva/node-oidc-provider usando Oracle como DataStore
 
 > An awesome project based on Ts.ED framework
 
